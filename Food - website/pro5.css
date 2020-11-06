@@ -1,0 +1,574 @@
+/* About scroll-bar*/
+html{
+  scroll-behavior: smooth;
+}
+.ul1 {
+  list-style-type: none;
+  margin: 0px;
+  padding: 10;
+  overflow: hidden;
+  background-color: #ff6600;
+}
+li {
+  float: right;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #ffc299;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+#logo{
+  width:330px;
+  height:300px;
+  border-radius:50%;
+  margin-right:50px;
+}
+.content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  border: #ff6600;;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.content a:hover {
+  background-color: #ff6600;;
+  border-style: 2px solid black;
+}
+
+.dropdown:hover .content {
+  display: block;
+}
+menu{
+  display: inline-block;
+  width: 100%;
+  position: sticky;
+}
+*
+{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+font-family: sans-serif;
+}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+.sec1
+{
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/slider-image1.jpg);
+  background-attachment: fixed;
+  clip-path: circle(0px at center);
+}
+#title
+{
+  position: relative;
+  top: 250px;
+  z-index: 1;
+  font-size: 3em;
+  text-align: center;
+  width: 100%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* Main body*/
+#content1{
+  position: absolute;
+   margin-top: 200vh;
+   background-color: #f9f9f9;
+   padding: 100px;
+   width: 100%;
+  height: 4850px;
+ }
+ #lorem{
+  font-size: 25px;
+ }
+ .menu1 {
+   border-radius: 10%;
+   width: 100px;
+   height: 100px;
+   margin: 60px;
+ }
+ .menu1{
+  text-align: center;
+  opacity: 0;
+  cursor: pointer;
+  scroll-behavior: smooth;
+  animation: fadeUp .5s linear .5s forwards ;
+ }
+ @keyframes fadeUp {
+  from{
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+/* special dishes*/
+.menu2{
+  width:300px;
+  height:200px;
+  margin: 35px;
+ border-radius: 7%;
+  cursor: pointer;
+  transition: transform .2s;
+}
+.menu2:hover{
+  -ms-transform: scale(1.5); 
+  -webkit-transform: scale(1.5); 
+  transform: scale(1.5); 
+}
+.nomial{
+  width: 100px;
+  height: 600px;
+  border-radius: 5%;
+}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  height: 5px;
+  width: 5px;
+  margin: 0 2px;
+  background-color: #bbb;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+.active {
+  background-color: #ff6600;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 0.3s;
+  animation-name: fade;
+  animation-duration: 0.3s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .3} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .3} 
+  to {opacity: 1}
+}
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+h1{
+  text-align: center;
+  font-size: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color:  #ff6600;
+}
+.blog1{
+  width: 750px;
+  height: 400px;
+  margin: 30px;
+  border-radius: 5%;
+  display: inline-block;
+}
+.blog-dat{
+  font-size: 20px;
+  margin: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* form box starts */
+.form{
+  height: 330px;
+
+}
+input[type=text]
+{
+  width:20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  box-sizing: border-box;
+}
+input[type=text]
+{
+  width:30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  box-sizing: border-box;
+}
+input[type=mail]
+{
+  width:30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  box-sizing: border-box;
+}
+select{
+  width:30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.suggest1{
+  margin: 10px;
+}
+.suggest2{
+  margin-left: 400px;
+}
+.suggest3{
+  margin-left: 400px;
+}
+.suggest4{
+  margin-left: 400px;
+}
+/* form box ends */
+/*button starts*/
+.btn {
+  display: inline-block;
+  padding: 10px 26px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: #dddddd;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 6px #999;
+}
+
+.btn:hover {background-color: #ff6600}
+
+.btn:active {
+  background-color: #ff6600;
+  box-shadow: 0 5px #999;
+  transform: translateY(4px);
+}
+/*button ends*/
+/*button1*/
+.btn1{
+  display: inline-block;
+  padding: 10px 26px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  margin-left: 500px;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: #dddddd;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 6px #999;
+}
+
+.btn1:hover {background-color: #ff6600}
+
+.btn1:active {
+  background-color: #ff6600;
+  box-shadow: 0 5px #999;
+  transform: translateY(4px);
+}
+.video{
+  margin-left:280px;
+}
+.blog-dat {
+  text-align: center;
+  font-size: 25px;
+}
+.passt{
+  font-family: 'Courier New', Courier, monospace;
+  margin: 10px;
+}
+h2{
+font-size: 30px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* cheif photos*/
+.chef{
+  background: #ccc;
+  width: 220px;
+  height: 300px;
+  border-radius: 15%;
+  margin-left: 60px;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  margin: 40px;
+  cursor: pointer;
+
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 250px;
+  background-color: #ff6600;
+  color: black;
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px 0;
+  position: absolute;
+  z-index: 1;
+  top: 105%;
+  left: 40%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #ff6600 transparent transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+.map {
+  height: 200px;  
+  width: 30%; 
+  right: 10px; 
+ }
+.detail{
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* suggestion box starts */
+#suggest1 {
+  width: 28%;
+  padding: 50px;
+  margin: 40px; 
+  margin-left:350px;
+  display: inline;
+  }
+#suggest2{
+  width: 28%;
+  padding: 50px;
+  margin: 40px; 
+  margin-left:350px;
+  display: inline;
+}
+#suggest3{
+  width: 30%;
+  padding: 50px;
+  margin: 40px; 
+  margin-left:350px;
+  display: inline;
+}
+#suggest4{
+  width: 28%;
+  padding: 50px;
+  margin: 40px; 
+  margin-left:350px;
+  display: inline;
+}
+#suggest5{ 
+  margin-left: 400px; 
+  display: inline;
+}
+#suggest6
+label {
+    font-size: .8rem;
+    letter-spacing: 1px;
+    margin-left:350px;
+}
+textarea {
+    padding: 20px;
+    width: 400px;
+    line-height: 1.5;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+}
+label {
+    display: inline-block;
+    margin-top: 10px;
+}
+.suggest7{
+  font-size: 20px;
+  display: inline-block;
+  margin: 20px;
+ 
+  margin-left: 400px;
+}
+.detail1{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 400px;
+}
+footer{
+  position: absolute;
+  display: inline-block;
+  background-color:#ff6600;
+  padding: auto;
+  margin: auto;
+  width: 100%;
+  height:300px;
+  left: 0;
+  bottom: 0;
+}
+.footer5{
+  color: #dddddd;
+  margin-left:1070px;
+}
+.foot{
+  border-radius: 25%;
+  margin: 5px;
+  width: 40px;
+  height: 40px;
+  background-color:  #ff6600;
+  cursor: pointer;
+  transition: transform 0.3s;
+} 
+.foot:hover{
+  background-color:  #ff6500;
+  -ms-transform: scale(1.5); 
+  -webkit-transform: scale(1.5); 
+  transform: scale(1.5); 
+}
+.footer2{
+  color: #dddddd;
+  display: inline-block;
+  position: absolute;
+  margin: 15px;
+  margin-bottom: 20px;
+}/* button 2*/
+.btn2{
+  display: inline-block;
+  padding: 5px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  margin-left: 90px;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: #dddddd;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 6px #999;
+}
+.btn2:hover {background-color: #ff6600}
+
+.btn2:active {
+  background-color: #ff6600;
+  box-shadow: 0 5px #999;
+  transform: translateY(4px);
+}
+/* bonus class*/
+.bonus{
+  margin-left: 1070px;
+  display: inline;
+  position: absolute;
+}
+.sign-up{
+  color: #dddddd;
+  font-size: 15px;
+}
+#gmail{
+  width:75%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  box-sizing: border-box;
+}
+/*.restaurant logo*/
+.restaurant{
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s;
+} 
+.restaurant:hover{
+  -ms-transform: scale(1.5); 
+  -webkit-transform: scale(1.5); 
+  transform: scale(1.5); 
+}
+.Cright{
+  text-align: center;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: oblique;
+  color: #dddddd;
+  margin-top: 180px;
+}
+/* up button*/
+#top {
+  display: inline;
+  position:absolute;
+  padding: 10px 20px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: #dddddd;
+  border: none;
+  border-radius: 100%;
+  width: 90px;
+  height: 70px;
+   margin-left: 1100px;
+  box-shadow: 0 8px #999;
+}
+#top:hover {
+  background-color: #ff6600
+}
+
+#top:active {
+  background-color: #ff6600;
+  box-shadow: 0 3px #666;
+  transform: translateY(4px);
+}
+
+
+
+

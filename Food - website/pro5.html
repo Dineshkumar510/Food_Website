@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+    <title>
+        Food website
+    </title>
+    <head>
+       <link rel="stylesheet" href="pro5.css">
+    </head>
+    <body>
+        <div id="menu">
+        <ul class="ul1">
+            <li><a href="#Blogs">Activity</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#content2">Content</a></li>
+            <li class="dropdown"><a href="#" class="dropbtn">Contact us</a>
+                <div class="content">
+                <a href="#">facebook</a>
+                <a href="#">twitter</a>
+                <a href="#">linked in</a> 
+                <li><a href="#content1">Home</a></li>   
+                </div>
+            </li> 
+            </ul>
+        </div>
+    <h1 class="title"><img id="logo" src="images/logo.jpg" alt="logo"><br>
+    Hotel Dawath Multicuisine Restaurant </h1>
+      <section class="sec1"></section>
+        <div>
+          <div class="container1">
+            <div id="content1">
+              <h1>Categories</h1>
+                  <p id="lorem">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Perspiciatis est explicabo  nisi eius, 
+                        quis consectetur velit perferendis cupiditate 
+                        porro rem ex vero doloribus soluta!
+                        Excepturi quisquam numquam voluptatem.
+                    </p>
+                <div class="categories">
+                <a href="#"><img class="menu1" src="images/dish.png" alt="dish"></a>
+                <a herf="#"> <img class="menu1" src="images/breakfast.png" alt="dish"></a>
+                <a href="#"> <img class="menu1" src="images/meat.png" alt="dish"></a>
+                <a href="#"><img class="menu1" src="images/hamburger.png" alt="dish"></a>
+                <a href="#"><img class="menu1" src="images/food.png" alt="dish"></a>
+                </div>
+                 <div id="content2">
+                    <h1>Special Dishes</h1>
+                    <p id="lorem">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Perspiciatis est explicabo  nisi eius, 
+                        quis consectetur velit perferendis cupiditate 
+                        porro rem ex vero doloribus soluta!
+                        Excepturi quisquam numquam voluptatem.
+                    </p><br>
+                <div class="categories2">
+                    <img class="menu2" src="images/food1.jpg" alt="dish">
+                    <img class="menu2" src="images/food2.jpg" alt="dish">
+                    <img class="menu2" src="images/food3.jpg" alt="dish">
+                    <img class="menu2" src="images/food4.jpg" alt="dish">
+                    <img class="menu2" src="images/food5.jpg" alt="dish">
+                    <img class="menu2" src="images/food6.jpg" alt="dish">
+                </div>
+                </div>
+                <div class="slideshow-container">
+                       <h1>TESTNOMIAL</h1><br>
+                    <div class="mySlides fade">
+                      <img class="nomial" src="images/food9.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <img  class="nomial" src="images/food11.jpg" style="width:100%">   
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <img  class="nomial" src="images/food10.jpg" style="width:100%">
+                    </div>
+                </div>
+                    <br>
+                     <div style="text-align:center">
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                    </div>  
+                <script>
+                    var slideIndex = 0;
+                    showSlides();
+                    
+                    function showSlides() {
+                      var i;
+                      var slides = document.getElementsByClassName("mySlides");
+                      var dots = document.getElementsByClassName("dot");
+                      for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                      }
+                      slideIndex++;
+                      if (slideIndex > slides.length) {slideIndex = 1}    
+                      for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";  
+                      dots[slideIndex-1].className += " active";
+                      setTimeout(showSlides, 4000);
+                    }
+                </script><br>
+            <div id="Blogs">
+                <h1>Blog</h1><br>
+                <iframe class="video" width="600" height="320" src="https://www.youtube.com/embed/TgSkS53CrjQ" frameborder="0" 
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+                    <div class="blog-dat"><h2>How to make pasta!!...</h2>
+                        <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+                        Non, ratione neque amet aliquam ut eveniet quas dolorem?<br>
+                     Eos animi accusantium quaerat dolores quod sequi tenetur molestias.<br>
+                      Adipisci et dolorem voluptas.....</div>
+                <div><button class="btn1">Read More</button></div><br><br>
+                <iframe class="video" width="600" height="320" src="https://www.youtube.com/embed/sv3TXMSv6Lw" frameborder="0"
+                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+                <div class="blog-dat"><h2>How to make pizza!!...</h2>
+                    <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+                    Non, ratione neque amet aliquam ut eveniet quas dolorem?<br>
+                 Eos animi accusantium quaerat dolores quod sequi tenetur molestias.<br>
+                  Adipisci et dolorem voluptas.....</div>
+                    <div><button class="btn1">Read More</button></div>
+            </div><br>
+            <div id="About">
+                <h1>About our Chiefs</h1><br>
+                <div class="tooltip">
+                    <img class="chef" src="images/team-image1.jpg" alt="Image"/>
+                    <span class="tooltiptext">Rachael Domenica Ray is an American television personality, businesswoman,
+                    celebrity cook and author.She hosts the syndicated daily talk and lifestyle program Rachael Ray,
+                    and the Food Network series 30 Minute Meals</span>
+                </div>
+                <div class="tooltip">
+                    <img class="chef" src="images/team-image2.jpg" alt="Image"/>
+                    <span class="tooltiptext">Julia Carolyn Child was an American cooking teacher, author, and television personality.
+                    She is recognized for bringing French cuisine to the American public with her debut cookbook, Mastering the Art ...
+                </span>
+                </div>
+                <div class="tooltip">
+                    <img class="chef" src="images/team-image3.jpg" alt="Image" />
+                <span class="tooltiptext">Paula Ann Hiers Deen is an American TV personality and cooking show host.
+                    Deen resides in Savannah, Georgia, where she owns and operates
+                    The Lady & Sons restaurant and Paula Deen's Creek House with her sons, Jamie and Bobby Deen. 
+                    She has published fifteen cookbooks.
+                </span>
+                </div>
+            </div>
+            <h1>Any suggestions</h1><br>  
+            <p class="detail">Contact us to registered phone number or submit your details
+                in the bellow suggestion box.</p>
+             <br><br>
+        <div class="form">
+            <form autocomplete="off" method="get">
+                <div id="suggest1">
+                    <label for="fname"><b>FirstName:</b></label>
+                    <input type="text" id="fname"   maxlength="10" placeholder="Enter first name...." name="fname" required>
+                </div><br><br>
+                <div id="suggest2">
+                    <label for="lname"><b>LastName:</b></label>
+                    <input type="text" id="lname"   maxlength="10" placeholder="Enter last name...." name="lname" required>
+                    <br><br>
+                </div>
+                <div id="suggest3">
+                    <label for="mail"><b>E-mail-Id:</b></label>
+                    <input type="mail"  id="mail"    placeholder="Enter your mail...." name="mail" required>
+                </div><br><br>
+                <div id="suggest4">
+                <label for="branch"><b>Branches:</b></label>
+                <select id="branch" name="branch">
+                    <option value="India">India</option>
+                    <option value="canada">Canada</option>
+                    <option value="australia">Australia</option>
+                    <option value="usa">USA</option>
+                    <option value="japan">Japan</option>
+                </select>
+                </div><br><br>
+                <div id="suggest5">
+                <label for="mobile"><b>Phone-no:</b></label>
+                <input type="text" name="mobile" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))" 
+                maxlength="10" placeholder="enter your number...." id="mobile"/>
+                </div><br><br>
+                <script type="text/javascript">
+                    function validate() {
+                        var mobile = document.getElementById("mobile").value;
+                        var pattern = /^[6-9]{1}[0-9]{9}$/;
+                        if (pattern.test(mobile)) {
+                            alert("Your number verified: "+mobile); 
+                            return true;
+                        } 
+                        alert("Not a valid mobile number(Input 10 digits number!!!...)");
+                        return false;
+                        }
+                </script>
+                <div id="suggest6">
+                    <label for="story"><b>Any suggestions:</b></label>
+                    <textarea id="suggestion" name="suggestion" placeholder="Any text..."rows="5" cols="33" required>
+                </textarea>
+                </div><br>
+                <div class="suggest7">
+                    <P><b>Would you visit again!...</b></P>
+                 <label for="review"><img src="images/ep3.png">:</label>
+                 <input type="radio" name="review" id="review" value="Yes">
+                 <label for="review"><img src="images/ep2.png">:</label>
+                 <input type="radio" name="review" id="review" value="No">
+                </div><br><br>
+                <div id="suggest1">
+                    <button type="submit" value="submit" onclick="validate();" class="btn" >Send</button>
+                </div><br>
+            </form>
+        </div>
+        <div><br><br>
+            <div id="arrow">
+            <a href="#menu"><img id="top" src="images/arrow.png" alt="top icon"></a>
+            </div>
+        <footer>
+            <div class="footer5">
+                <b><p>Follow us on:</p></b>
+                <a href="#1"><img class="foot" src="images/facebook.png" alt="logo"></a>
+                <a href="#1"><img class="foot" src="images/twitter.png" alt="logo"></a>
+                <a href="#1"><img class="foot" src="images/instagram.png" alt="logo"></a>
+                <a href="#1"><img class="foot" src="images/linkedin.png" alt="logo"></a>
+                <a href="#1"><img class="foot" src="images/snapchat.png" alt="logo"></a>
+            </div>
+            <div class="footer2">
+                <img class="restaurant" src="images/shop.png"><br><br>
+                <b><u>"6580 Saint Hubert St.<br>
+                        Montreal, (Quebec)<br>
+                        H2S 2M3"</u><br>
+                        Canada.</b>
+            </div>
+            <div class="bonus"><br><br>
+                <p class="sign-up"><b>Sign-up for Amazing Offers!</p><br></b>
+                <label for="gmail"><b>E-Mail:</b></label>
+                <input type="gmail"  id="gmail" placeholder="Enter your mail..." required><br>
+                <button class="btn2">Enroll Now</button>
+            </div>
+            <div class="copyright">
+                <b><p class="Cright">Copy-Right @ 2020 <br>
+                    Design and Develop by Dinesh
+                </p></b>
+             </div>
+        </footer>
+      </div>
+    </div>
+   </div>
+</div>
+</div>
+    <script type="text/javascript">
+        var section = document.querySelector('section');
+        window.addEventListener('scroll', function()
+        {
+        var value = window.scrollY;
+        section.style.clipPath = "circle("+ value +"px at center)"
+        })
+    </script>    
+     </body>   
+</html>
